@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet" />
+    <title>TA-TE-TI</title>
+</head>
+<body>
+    <div id="screen"></div>
+</body>
+<template id="inicio-vista">
+    <div class="cuadro-form">
+        <form class="form">
+        <div>
+            <p>Nombre del jugador 1</p>
+            <input id="nj1"/>
+        </div>
+        <div>
+            <p>Nombre del jugador 2</p>
+            <input id="nj2"/>
+        </div>
+        <div>
+            <button class="button" id="aceptar" type="submit">Aceptar</button>
+        </div>
+    </form>
+    </div>
+</template>
+<template id="juego-vista">
+    <div class="jugadores">
+        <div class="centrar-j">
+          <div>
+              <p id="j1">Pedro</p>
+          </div>
+          <div>
+           <p id="j2">Juan</p>
+           </div>
+        </div>
+      
+    </div>
+  
+      <div id="tablero" class="tablero">
+          <div id="grid" class="grid">
+              <button id="1" class="cuadro" type="submit"></button>
+              <button id="2" class="cuadro" type="submit"></button>
+              <button id="3" class="cuadro" type="submit"></button>
+              <button id="4" class="cuadro" type="submit"></button>
+              <button id="5" class="cuadro" type="submit"></button>
+              <button id="6" class="cuadro" type="submit"></button>
+              <button id="7" class="cuadro" type="submit"></button>
+              <button id="8" class="cuadro" type="submit"></button>
+              <button id="9" class="cuadro" type="submit"></button>
+          </div>
+      </div>
+      
+      <div class="ganador">
+        <p id="ganador"></p>
+      </div>
+
+</template>
+<script src="./index.js"></script>
+</html>

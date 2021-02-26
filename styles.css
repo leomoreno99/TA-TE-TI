@@ -1,0 +1,128 @@
+body {
+    background-color:#9FE0F0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tablero { 
+    background-color: seagreen;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 1px 4px 4px rgba(0,0,0,0.2);
+    /* margin-top: 200px; */
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 153.328px);
+    grid-gap: 20px 20px;
+}
+
+.cuadro{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    border: none;
+    font-size: 80px;
+    background-color: #F0BA5D;
+    color: white;
+    outline: none;
+}
+
+.cuadro:disabled {
+    background-color: #e29511;
+}
+
+.cuadro:hover{
+    background-color: #f0cb8a;
+    cursor:pointer;   
+}
+
+.cuadro:active {
+    background-color: #eba938;
+}
+
+.cuadro::selection{
+    border: red;
+}
+
+/* ---------------------------- FORMULARIO ----------------------------- */
+
+.cuadro-form {
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: seagreen;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 200px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form div {
+    display: grid;
+    margin: 0;
+}
+
+.button {
+    margin-top: 20px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background-color:  #e29511;
+    color: white;
+    font-weight: 600;
+}
+
+form div {
+    /* width: calc(100% - 400px); */
+    display: inline-block;
+    margin-left: 40px;
+    min-width: auto;
+    font-weight: 900;
+    color:#F0BA5D;
+}
+
+div input {
+    border: none;
+    border-radius: 4px;
+    height: 32px;
+}
+
+.jugadores {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.centrar-j {
+    margin: auto;
+}
+
+.jugadores div {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.jugadores p {
+    
+    color: seagreen;
+    font-size: 30px;
+
+}
+
+.ganador {
+    display: grid;
+    margin: auto; 
+    margin-left: 30%;
+    color: tomato;
+    font-weight: 600;
+    font-size: 30px;
+}
